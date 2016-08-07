@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Bus Times</string>
+    <string name="create_sample_data">Tools - Add sample data</string>
+    <string name="delete_all_stops">Tools - Remove all data</string>
+    <string name="all_deleted">All stops have been deleted</string>
+    <string name="stop_deleted">Stop has been deleted</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="title_activity_stop">Schedule</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="delete_stop">Tools - Delete Stop</string>
+    <string name="title_activity_temp_new_stop">TempNewStop</string>
+    <string name="spinner_prompt">Start here</string>
+
+</resources>

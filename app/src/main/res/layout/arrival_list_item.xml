@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:longClickable="true"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/imageBus"
+        android:src="@drawable/ic_bus_grey600_48dp"
+        android:paddingLeft="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:id="@+id/routeNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageBus"
+        android:text="720"
+        android:textColor="@color/bright_foreground_disabled_material_light"
+        android:textSize="30sp"
+        android:paddingTop="7dp"
+        android:paddingLeft="7dp"/>
+
+    <TextView
+        android:id="@+id/arrivalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="5dp"
+        android:text="15:00"
+        android:textColor="@color/bright_foreground_disabled_material_light"
+        android:textSize="30sp"
+        android:paddingTop="7dp"/>
+
+</RelativeLayout>

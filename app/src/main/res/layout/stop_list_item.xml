@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:longClickable="true"
+    android:onClick="startTimeTable"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <ImageView
+        android:id="@+id/imageMarker"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_map_marker_grey600_48dp"/>
+
+    <TextView
+        android:id="@+id/tvStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_toEndOf="@+id/imageMarker"
+        android:layout_toRightOf="@+id/imageMarker"
+        android:singleLine="true"
+        android:text="Dummy Text"
+        android:textColor="@color/bright_foreground_disabled_material_light"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvStopNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tvStop"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_toEndOf="@+id/imageMarker"
+        android:layout_toRightOf="@+id/imageMarker"
+        android:singleLine="true"
+        android:text="Dummy Text"
+        android:textColor="@color/bright_foreground_disabled_material_light"
+        android:textSize="14sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ian.transport" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        >
+        <activity
+            android:name=".StopsListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".StopsProvider"
+            android:authorities="com.example.ian.transport.stopsprovider"
+            android:exported="false" />
+
+        <activity
+            android:name=".BusStopActivity"
+            android:label="@string/title_activity_stop"
+            android:parentActivityName=".StopsListActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".StopsListActivity" />
+        </activity>
+        <activity
+            android:name=".TempNewStop"
+            android:label="@string/title_activity_temp_new_stop"
+            android:parentActivityName=".StopsListActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".StopsListActivity" />
+        </activity>
+    </application>
+
+</manifest>
